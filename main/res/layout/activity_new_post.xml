@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewPost">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbNewPost"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar" />
+
+    <ProgressBar
+        android:id="@+id/pbNewPost"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
+
+    <ImageView
+        android:id="@+id/ivNewPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/ndunyaheader" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etNewPostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_edit_black"
+            android:drawableLeft="@drawable/ic_edit_black"
+            android:hint="Enter Name of Idea"
+            android:inputType="textCapWords" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etNewPostDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_edit_black"
+            android:drawableLeft="@drawable/ic_edit_black"
+            android:hint="Enter Description..."
+            android:inputType="textMultiLine"
+            android:lines="4" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAddNewIdea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="POST IDEA"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Watered</string>
+    <string name="email_hint">Enter Email Address…</string>
+    <string name="password_hint">Enter Your Password…</string>
+    <string name="btn_login_text">LOGIN</string>
+    <string name="btn_reg_link">Not A Member ? SIGN UP</string>
+    <string name="conf_pass_hint">Confirm Your Password</string>
+    <string name="btn_reg_text">SIGN UP</string>
+    <string name="btn_login_link">Already A Member ? Log In</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="log_out_link">Log Out</string>
+    <string name="acc_settings">Account Settings</string>
+    <string name="surname_hint">Enter Surname</string>
+    <string name="user_email_hint">Current User Email</string>
+    <string name="phone_hint">Enter Phone Number</string>
+    <string name="full_names_hint">Enter Full Names</string>
+    <string name="btn_save_user_details">Save User Details</string>
+    <string name="username_hint">Enter Username</string>
+    <string name="btn_edit_acc">Change Account Details</string>
+    <string name="title_activity_my_ideas">My Ideas</string>
+    <string name="user_pic">pic</string>
+    <string name="lorem_ipsum">This is a sample text that will be displayed as a placeholder
+        in case the actual idea description can\'t be found and its behavior should include an ellipsis
+        whenever it seems longer than the given space.Its display is crucial to the app\'s resilience.
+    </string>
+</resources>

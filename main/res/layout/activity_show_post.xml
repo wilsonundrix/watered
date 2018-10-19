@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ShowPost">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbShowPost"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tvPostTitle"
+                style="@style/Base.TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="The Title"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/ivPostPic"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/tvPostTitle"
+                android:cropToPadding="true"
+                android:src="@drawable/notify_panel_notification_icon_bg" />
+
+
+            <TextView
+                android:id="@+id/tvPostDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivPostPic"
+                android:text="@string/lorem_ipsum"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPostDesc"
+                android:layout_marginTop="12dp">
+
+                <ImageButton
+                    android:id="@+id/ibPostFav"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_favorite_black" />
+
+                <TextView
+                    android:id="@+id/ibPostFavText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ibPostFav"
+                    android:layout_toRightOf="@id/ibPostFav"
+                    android:text="101 likes"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlFirst">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivPostSenderPic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:id="@+id/tvPostUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivPostSenderPic"
+                    android:layout_toRightOf="@id/ivPostSenderPic"
+                    android:text="Posted by: Username"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPostTimestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPostUsername"
+                    android:layout_toEndOf="@id/ivPostSenderPic"
+                    android:layout_toRightOf="@id/ivPostSenderPic"
+                    android:text="On Jan 20,2018 at 13:24"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
